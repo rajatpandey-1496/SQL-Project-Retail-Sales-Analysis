@@ -17,6 +17,76 @@ CREATE TABLE retail_sales
                 cogs	FLOAT,
                 total_sale FLOAT
             );
+
+SELECT * FROM retail_sales
+LIMIT 10
+
+
+SELECT 
+    COUNT(*) 
+FROM retail_sales
+
+-- Data Cleaning
+SELECT * FROM retail_sales
+WHERE transactions_id IS NULL
+
+SELECT * FROM retail_sales
+WHERE sale_date IS NULL
+
+SELECT * FROM retail_sales
+WHERE sale_time IS NULL
+
+SELECT * FROM retail_sales
+WHERE 
+    transaction_id IS NULL
+    OR
+    sale_date IS NULL
+    OR 
+    sale_time IS NULL
+    OR
+    gender IS NULL
+    OR
+    category IS NULL
+    OR
+    quantity IS NULL
+    OR
+    cogs IS NULL
+    OR
+    total_sale IS NULL;
+    
+-- 
+DELETE FROM retail_sales
+WHERE 
+    transaction_id IS NULL
+    OR
+    sale_date IS NULL
+    OR 
+    sale_time IS NULL
+    OR
+    gender IS NULL
+    OR
+    category IS NULL
+    OR
+    quantity IS NULL
+    OR
+    cogs IS NULL
+    OR
+    total_sale IS NULL;
+    
+-- Data Exploration
+
+-- How many sales we have?
+SELECT COUNT(*) as total_sale FROM retail_sales
+
+-- How many uniuque customers we have ?
+
+SELECT COUNT(DISTINCT customer_id) as total_sale FROM retail_sales
+
+
+
+SELECT DISTINCT category FROM retail_sales
+
+
 ```
 
 
@@ -127,4 +197,5 @@ SELECT transactions_id, total_sale, cogs,
        ROUND(((total_sale - cogs)/total_sale)*100,2) AS margin_percent
 FROM retail_sales
 WHERE ((total_sale - cogs)/total_sale)*100 < 20;
+
 ```
