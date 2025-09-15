@@ -1,3 +1,26 @@
+SQL-Project-Retail-Sales-Analysis/
+│
+├── data/
+│   └── retail_sales.csv              # dataset (or link in README if too large)
+│
+├── sql/
+│   ├── 01_sales_summary.sql          # category/overall revenue queries
+│   ├── 02_customer_insights.sql      # top customers, LTV, demographics
+│   ├── 03_profitability.sql          # margins, low-profit transactions
+│   ├── 04_trends.sql                 # monthly/weekly trends, seasonal
+│   └── all_queries.sql               # combined file
+│
+├── notebooks/
+│   └── data_cleaning.ipynb           # optional cleaning, validation checks
+│
+├── reports/
+│   ├── findings.md                   # key insights, tables, explanations
+│   └── visuals/                      # charts/plots if you want to add later
+│
+├── README.md                         # main documentation
+├── LICENSE                           # (MIT license for open use)
+└── .gitignore                        # ignore temp files
+
 # Retail Sales Analysis SQL Project
 
 ## Project Overview
