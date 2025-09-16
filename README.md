@@ -192,6 +192,32 @@ This project demonstrates how SQL can be used to uncover valuable insights from 
 3. Run queries from `retail_sales_queries.sql`.
 4. **Explore and Modify**: Feel free to modify the queries to explore different aspects of the dataset or answer additional business questions.
 
+## 📂 Repository Structure
+```
+SQL-Project-Retail-Sales-Analysis/
+│
+├── data/
+│   └── retail_sales.csv              # dataset (or link in README if too large)
+│
+├── sql/
+│   ├── 01_sales_summary.sql          # category/overall revenue queries
+│   ├── 02_customer_insights.sql      # top customers, LTV, demographics
+│   ├── 03_profitability.sql          # margins, low-profit transactions
+│   ├── 04_trends.sql                 # monthly/weekly trends, seasonal
+│   └── all_queries.sql               # combined file
+│
+├── notebooks/
+│   └── data_cleaning.ipynb           # optional cleaning, validation checks
+│
+├── reports/
+│   ├── findings.md                   # key insights, tables, explanations
+│   └── visuals/                      # charts/plots if you want to add later
+│
+├── README.md                         # main documentation
+├── LICENSE                           # (MIT license for open use)
+└── .gitignore                        # ignore temp files
+```
+
 
 
 This project is part of my portfolio, showcasing the SQL skills essential for data analyst roles. If you have any questions, feedback, or would like to collaborate, feel free to get in touch!
