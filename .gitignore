@@ -1,0 +1,15 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# Python (if notebooks/scripts are added later)
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Local env / secrets
+.env
