@@ -141,7 +141,7 @@ SELECT month, category, total_quantity
 FROM (
     SELECT EXTRACT(MONTH FROM sale_date) AS month,
            category,
-           SUM(quantiy) AS total_quantity,
+           SUM(quantity) AS total_quantity,
            RANK() OVER (PARTITION BY EXTRACT(MONTH FROM sale_date)
                         ORDER BY SUM(quantiy) DESC) AS rnk
     FROM retail_sales
